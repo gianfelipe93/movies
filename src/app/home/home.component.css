@@ -1,13 +1,20 @@
 .full {
-    position: absolute;
-    z-index: 0;
-    background-size: 100% 100%;
-    top: 0px;
-    left: 0px; 
-    min-width: 100%;
-    min-height: 100%; 
-    width: auto;
-    height: auto;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .full {
+    height: auto !important;
+  }
+
+  .welcome[_ngcontent-c1] {
+    margin-top: 70px;
+  }
 }
 
 .loader[_ngcontent-c1] {
@@ -21,14 +28,23 @@
 }
 
 /* Safari */
+
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h1 {
