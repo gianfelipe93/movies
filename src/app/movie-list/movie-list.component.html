@@ -1,8 +1,7 @@
-<div *ngIf="!loading && movies.length == 0" class="no-movies">
+<!-- <div *ngIf="!loading && movies.length == 0" class="no-movies">
   <p class="text-center">Sorry, no movies available.</p>
-</div>
+</div> -->
 <div class="card-group">
-  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
   <div class="row">
     <div *ngFor="let movie of movies">
       <div class="col h-100">
@@ -17,10 +16,6 @@
               <small class="text-muted" *ngIf="!movie.Price">Price: Unavailable</small>
             </p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngIf="movie.ID[0] == 'c'">Available in CinemaWorld</li>
-            <li class="list-group-item" *ngIf="movie.ID[0] == 'f'">Available in FilmWorld</li>
-          </ul>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" *ngIf="movie.Price && movie.ID[0] == 'c'">Cheaper in CinemaWorld</li>
             <li class="list-group-item" *ngIf="movie.Price && movie.ID[0] == 'f'">Cheaper in FilmWorld</li>

@@ -59,7 +59,7 @@ var MovieService = {
   },
 
   remoteImageExists(url) {
-    return got.get(url)
+    return got.get(url, options)
       .then(result => {
         return true
       })

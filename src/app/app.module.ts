@@ -24,7 +24,7 @@ import { MovieService } from './movie.service';
     HttpClientModule,
     LoadingModule
   ],
-  providers: [MovieService],
+  providers: [MovieService, MovieListComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
