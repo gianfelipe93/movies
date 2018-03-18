@@ -34,7 +34,7 @@ function validImages(movies) {
           if (isValid)
             return movie
 
-          movie.Poster = "../../assets/no-image.png"
+          movie.Poster = "https://s3-ap-southeast-2.amazonaws.com/gianfelipe-images/no-image.png"
           return movie
         })
     })
