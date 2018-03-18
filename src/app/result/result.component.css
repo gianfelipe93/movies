@@ -1,0 +1,28 @@
+li {
+    text-decoration: none;
+}
+
+.welcome {
+    background-color: black;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+.card {
+    width: 18rem;
+}
+
+h1 {
+    color:white;
+}
+
+p {
+    color: white;
+}
+
+.search-bar {
+    width: 550px;
+    height: 45px;
+    border-radius: 25px;
+}

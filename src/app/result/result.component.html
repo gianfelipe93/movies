@@ -1,0 +1,17 @@
+<div class="welcome">
+  <div class="text-center">
+    <h1>Movie Advisor</h1>
+    <p>Find the cheapest available movies in the 2 most popular movie databases: CinemaWorld and FilmWorld</p>
+    <div class="d-flex justify-content-center">
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="term" class="sr-only">Search term</label>
+          <input [(ngModel)]="term" placeholder="Search for a movie, e.g. Star Wars" id="term" name="term" class="form-control search-bar"
+            type="text">
+        </div>
+        <a href="/result/{{term}}" class="btn btn-primary mb-2">Search</a>
+      </form>
+    </div>
+  </div>
+</div>
+<movie-list></movie-list>
